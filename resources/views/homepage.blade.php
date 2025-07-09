@@ -1,5 +1,17 @@
 <x-layout>
 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      @if(session('failure'))
+        <p class="m-0 alert alert-danger text-center">
+          {{ session('failure') }}
+        </p>
+      @endif
+    </div>
+  </div>
+</div>
+
 <div class="container py-md-5">
   <div class="row align-items-center">
     <div class="col-lg-7 py-3 py-md-5">
